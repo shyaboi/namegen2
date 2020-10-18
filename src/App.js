@@ -7,6 +7,7 @@ import Button from '@material-ui/core/Button';
 import Box from '@material-ui/core/Box';
 import 'fontsource-roboto';
 import TopWord from "./components/TopWord/TopWord"
+import MultiWord from "./components/MultiWord/MultiWord"
 
 export default class App extends React.Component {
 
@@ -17,7 +18,6 @@ export default class App extends React.Component {
     return (
     <Container >
       <TopNav />
-    <TopWord />
       
     </Container>
      

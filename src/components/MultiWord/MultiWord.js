@@ -11,14 +11,17 @@ import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Box from '@material-ui/core/Box';
+import Slider from '@material-ui/core/Slider';
+
 import 'fontsource-roboto';
 
-export default class TopWord extends React.Component {
+
+export default class MultiWord extends React.Component {
   state = {
     topWord: "TopWord",
     nextWord:"",
     words: [],
-    
+    numChoice:2
   };
   useStyles = makeStyles({
         root: {
@@ -26,16 +29,18 @@ export default class TopWord extends React.Component {
         },
       });
 
-
-
+valuetext(value) {
+        return `${value}°C`;
+        // this.setState({numChoice:value})
+      }
   componentDidMount() {
-    axios.get(`http://localhost:5000/10`).then((res) => {
-      let [terpWord, ...words] = res.data;
+
+    axios.get(`http://localhost:5000/1000`).then((res) => {
+      let [...words] = res.data;
       // console.log(terpWord);
       // const words = res.data;
       this.setState({ words });
       // console.log(this.state.words);
-      this.setState({ topWord:terpWord });
     });
   }
   handleChange = (event, newValue) => {
@@ -62,11 +67,29 @@ export default class TopWord extends React.Component {
 
 
   render (){
+var numChoice = this.state.numChoice
+
   return (
     <Container>
     <Box display="flex" flexDirection="row" p={1} m={1} bgcolor="background.paper">
-      <Typography variant="h1" component="h2" gutterBottom key={this.state.topWord}>{this.state.topWord}</Typography>
+      <Typography variant="h1" component="h2" gutterBottom key={this.state.words[numChoice]}>{this.state.words[numChoice]}</Typography>
 </Box>
+<div className={this.useStyles.root}>
+      <Typography id="discrete-slider" gutterBottom>
+       How Many Words
+      </Typography>
+      <Slider
+        defaultValue={5}
+        getAriaValueText={this.valuetext}
+        aria-labelledby="discrete-slider"
+        valueLabelDisplay="auto"
+        step={1}
+        marks
+        min={1}
+        max={10}
+      />
+   
+    </div>
 <Box display="flex" flexDirection="row-reverse" p={1} m={1} bgcolor="background.paper">
       <Button variant="contained" color="primary" onClick={this.copyCodeToClipboard}>
   Copy
