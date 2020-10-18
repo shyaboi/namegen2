@@ -14,7 +14,14 @@ app.use(function (req, res, next) {
     next();
   });
 
-
+  app.get("/1", (req, res) => {
+    let wordCache = []
+    // console.log(wordCache)
+        var randomWord = words[Math.floor(Math.random() * words.length)];
+        wordCache.push(randomWord)
+        // console.log(wordCache)
+    res.send(wordCache);
+  });
 
 
 app.get("/10", (req, res) => {
