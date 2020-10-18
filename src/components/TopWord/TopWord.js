@@ -40,7 +40,12 @@ export default class TopWord extends React.Component {
     console.log(nextWord)
     this.setState({nextWord:nextWord})
     this.setState({topWord:nextWord})
-    if (this.state.words.length < 2) {
+    if (this.state.words.length < 4) {
+      axios.get(`http://localhost:5000/10`).then((res) => {
+      let cacheGrab = res.data;
+      console.log(cacheGrab)
+      this.state.words.unshift(...cacheGrab)
+    })
       
     }
         console.log(this.state.topWord)
