@@ -35,7 +35,7 @@ export default class App extends React.Component {
 </Box>
 <Box display="flex" flexDirection="row-reverse" p={1} m={1} bgcolor="background.paper">
       <Button variant="contained" color="primary">
-  Primary
+  Copy
 </Button>
 </Box>
 <Box display="flex" justifyContent="center" m={1} p={1} bgcolor="background.paper">

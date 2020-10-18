@@ -2,11 +2,10 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import FolderIcon from '@material-ui/icons/Folder';
 import RestoreIcon from '@material-ui/icons/Restore';
 import LoopRoundedIcon from '@material-ui/icons/LoopRounded';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
-
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 const useStyles = makeStyles({
   root: {
     width: 500,
@@ -23,10 +22,10 @@ export default function BottomNav() {
 
   return (
     <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
+      <BottomNavigationAction label="Previous" value="previous" icon={<ArrowBackIosIcon />} />
       <BottomNavigationAction label="Recents" value="recents" icon={<RestoreIcon />} />
-      <BottomNavigationAction label="Refresh" value="Refresh" icon={<LoopRoundedIcon />} />
-      <BottomNavigationAction label="Nearby" value="nearby" icon={<LocationOnIcon />} />
-      <BottomNavigationAction label="Folder" value="folder" icon={<FolderIcon />} />
+      <BottomNavigationAction label="Refresh" value="refresh" icon={<LoopRoundedIcon />} />
+      <BottomNavigationAction label="Next" value="next" icon={<ArrowForwardIosIcon />} />
     </BottomNavigation>
   );
 }
