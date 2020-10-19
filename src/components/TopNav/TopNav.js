@@ -40,7 +40,7 @@ export default function TopNav() {
           </Typography>
 
           <Typography variant="h6" className={classes.title}>
-          <Button color="inherit"><MenuItem component={Link} to="/MultiWord" >Name Generator</MenuItem></Button>
+          <Button color="inherit"><MenuItem component={Link} to="/MultiWord" >Repo Name Generator</MenuItem></Button>
           </Typography>
           
           

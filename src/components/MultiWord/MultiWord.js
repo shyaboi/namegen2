@@ -27,7 +27,6 @@ export default class MultiWord extends React.Component {
         super()
     this.state = {
         topWord: "TopWord",
-        nextWord:"",
         words: [],
         numChoice:2
     };
@@ -42,12 +41,15 @@ export default class MultiWord extends React.Component {
       
       
       componentDidMount() {
+            this.setState({numChoice:val})
+            var amount = parseInt(this.state.numChoice) - 1
           
-          axios.get(`http://localhost:5000/${this.state.numChoice}`).then((res) => {
-              let [...words] = res.data;
-              // console.log(terpWord);
+          axios.get(`http://localhost:5000/multi/${amount}`).then((res) => {
+              let words = res.data;
+            //   console.log(words);
               // const words = res.data;
               this.setState({ words });
+
               // console.log(this.state.words);
             });
         }
@@ -62,18 +64,37 @@ export default class MultiWord extends React.Component {
                 } 
            
         handleChange = (event, value) => {
-            console.log(val)
-
+            // console.log(val)
             this.setState({numChoice:val})
+            var chosen = val
+            console.log(chosen)
+            axios.get(`http://localhost:5000/multi/${chosen}`).then((res) => {
+              let words = res.data;
+            //   console.log(words);
+              // const words = res.data;
+              this.setState({ words });
+
+              // console.log(this.state.words);
+            });
   };
 
 
   render (){
-
-  return (
+      const dinus = this.state.words
+        var newarray1 = []
+      for(var x = 0; x < dinus.length; x++){
+        newarray1.push(dinus[x].charAt(0).toUpperCase()+dinus[x].slice(1));
+    }
+    console.log(newarray1)
+      return (
     <Container>
-    <Box display="flex" flexDirection="row" p={1} m={1} bgcolor="background.paper">
-      <Typography variant="h2" component="h2" gutterBottom key={this.state.words}>{this.state.words}</Typography>
+    <Box p={1} m={1} bgcolor="background.paper">
+      <Typography display="flex" flexWrap="wrap" variant="h5" component="h5" gutterBottom key={newarray1}>{newarray1}</Typography>
+</Box>
+<Box display="flex" flexDirection="row-reverse" p={1} m={1} bgcolor="background.paper">
+      <Button variant="contained" color="primary" >
+  Copy
+</Button>
 </Box>
 <div className={this.useStyles.root}>
       <Typography id="discrete-slider" gutterBottom>
@@ -92,11 +113,7 @@ export default class MultiWord extends React.Component {
       />
    
     </div>
-<Box display="flex" flexDirection="row-reverse" p={1} m={1} bgcolor="background.paper">
-      <Button variant="contained" color="primary" onClick={this.copyCodeToClipboard}>
-  Copy
-</Button>
-</Box>
+
 <Box display="flex" justifyContent="center" m={1} p={1} bgcolor="background.paper">
     </Box>
     <BottomNavigation   className={this.useStyles.root}>

@@ -21,8 +21,6 @@ app.use(function (req, res, next) {
         var randomWord = words[Math.floor(Math.random() * words.length)];
         wordCache.push(randomWord)
     }
-        var randomWord = words[Math.floor(Math.random() * words.length)];
-        wordCache.push(randomWord)
         // console.log(wordCache)
     res.send(wordCache);
   });
