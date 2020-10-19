@@ -17,8 +17,7 @@ export default class TopWord extends React.Component {
   state = {
     topWord: "TopWord",
     nextWord:"",
-    words: [],
-    
+    words: [],    
   };
   useStyles = makeStyles({
         root: {

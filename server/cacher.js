@@ -14,10 +14,13 @@ app.use(function (req, res, next) {
     next();
   });
 
-  app.post("/multi/:number", (req, res) => {
-
+  app.get("/multi/:number?", (req, res) => {
+    console.log(req.params.number)
     let wordCache = []
-    // console.log(wordCache)
+    for (let i = 0; i < req.params.number; i++) {
+        var randomWord = words[Math.floor(Math.random() * words.length)];
+        wordCache.push(randomWord)
+    }
         var randomWord = words[Math.floor(Math.random() * words.length)];
         wordCache.push(randomWord)
         // console.log(wordCache)

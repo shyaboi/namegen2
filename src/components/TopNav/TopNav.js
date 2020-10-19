@@ -9,6 +9,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import TopWord from "../TopWord/TopWord"
 import MultiWord from "../MultiWord/MultiWord"
+import { MenuItem } from '@material-ui/core';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -35,11 +36,11 @@ export default function TopNav() {
             <MenuIcon />
           </IconButton>
             <Typography variant="h6" className={classes.title}>
-          <Button color="inherit"><Link to="/TopWord">Top Word</Link>  </Button>
+          <Button color="inherit"><MenuItem component={Link} to="/TopWord">Top Word</MenuItem>  </Button>
           </Typography>
 
           <Typography variant="h6" className={classes.title}>
-          <Button color="inherit"><Link to="/MultiWord">Name Generator</Link></Button>
+          <Button color="inherit"><MenuItem component={Link} to="/MultiWord" >Name Generator</MenuItem></Button>
           </Typography>
           
           

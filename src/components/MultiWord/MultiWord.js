@@ -15,78 +15,80 @@ import Slider from '@material-ui/core/Slider';
 
 import 'fontsource-roboto';
 
+var val;
+function valuetext(value) {
+   val = value
+    return val
+  }
+
 
 export default class MultiWord extends React.Component {
-  state = {
-    topWord: "TopWord",
-    nextWord:"",
-    words: [],
-    numChoice:2
-  };
+    constructor() {
+        super()
+    this.state = {
+        topWord: "TopWord",
+        nextWord:"",
+        words: [],
+        numChoice:2
+    };
+    // this.valueSlider = this.valuetext.bind(this)
+}
   useStyles = makeStyles({
         root: {
           width: 500,
         },
       });
 
-valuetext(value) {
-        return `${value}°C`;
-        // this.setState({numChoice:value})
-      }
-  componentDidMount() {
-
-    axios.get(`http://localhost:5000/1000`).then((res) => {
-      let [...words] = res.data;
-      // console.log(terpWord);
-      // const words = res.data;
-      this.setState({ words });
-      // console.log(this.state.words);
-    });
-  }
-  handleChange = (event, newValue) => {
-    let nextWord = this.state.words.pop()
-    console.log(nextWord)
-    this.setState({nextWord:nextWord})
-    this.setState({topWord:nextWord})
-    if (this.state.words.length < 4) {
-      axios.get(`http://localhost:5000/10`).then((res) => {
-      let cacheGrab = res.data;
-      console.log(cacheGrab)
-      this.state.words.unshift(...cacheGrab)
-    })
       
-    }
-        console.log(this.state.topWord)
+      
+      componentDidMount() {
+          
+          axios.get(`http://localhost:5000/${this.state.numChoice}`).then((res) => {
+              let [...words] = res.data;
+              // console.log(terpWord);
+              // const words = res.data;
+              this.setState({ words });
+              // console.log(this.state.words);
+            });
+        }
+
+   
+                grabMor(){
+                   
+                    // return
+                } 
+                onChange =()=> {
+
+                } 
+           
+        handleChange = (event, value) => {
+            console.log(val)
+
+            this.setState({numChoice:val})
   };
-  
-  copyCodeToClipboard = () => {
-    // const el = this.state.topWord
-    this.state.topWord.select()
-    document.execCommand("copy")
-  }
 
 
   render (){
-var numChoice = this.state.numChoice
 
   return (
     <Container>
     <Box display="flex" flexDirection="row" p={1} m={1} bgcolor="background.paper">
-      <Typography variant="h1" component="h2" gutterBottom key={this.state.words[numChoice]}>{this.state.words[numChoice]}</Typography>
+      <Typography variant="h2" component="h2" gutterBottom key={this.state.words}>{this.state.words}</Typography>
 </Box>
 <div className={this.useStyles.root}>
       <Typography id="discrete-slider" gutterBottom>
        How Many Words
       </Typography>
       <Slider
-        defaultValue={5}
-        getAriaValueText={this.valuetext}
+        defaultValue={2}
+        getAriaValueText={valuetext}
         aria-labelledby="discrete-slider"
         valueLabelDisplay="auto"
         step={1}
         marks
         min={1}
         max={10}
+        onMouseUp={this.handleChange}
       />
    
     </div>
@@ -101,7 +103,7 @@ var numChoice = this.state.numChoice
       {/* <BottomNavigationAction label="Previous" value="previous"  icon={<ArrowBackIosIcon />} /> */}
       <BottomNavigationAction label="Recents" value="recents" icon={<RestoreIcon />} />
       <BottomNavigationAction label="Refresh" value="refresh" icon={<LoopRoundedIcon />} />
-      <BottomNavigationAction label="Next" value="next" onClick={this.handleChange} icon={<ArrowForwardIosIcon />} />
+      <BottomNavigationAction label="Next" value="next" icon={<ArrowForwardIosIcon />} />
     </BottomNavigation>
     </Container>
   );}
