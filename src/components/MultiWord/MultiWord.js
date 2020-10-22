@@ -12,6 +12,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Box from '@material-ui/core/Box';
 import Slider from '@material-ui/core/Slider';
+import copy from 'copy-to-clipboard';
 
 import 'fontsource-roboto';
 
@@ -53,15 +54,12 @@ export default class MultiWord extends React.Component {
               // console.log(this.state.words);
             });
         }
-
-   
-                grabMor(){
-                   
-                    // return
-                } 
                 onChange =()=> {
 
                 } 
+
+                copyState = ()=> {copy(this.state.words);}
+
            
         handleChange = (event, value) => {
             // console.log(val)
@@ -92,7 +90,7 @@ export default class MultiWord extends React.Component {
       <Typography display="flex" flexWrap="wrap" variant="h5" component="h5" gutterBottom key={newarray1}>{newarray1}</Typography>
 </Box>
 <Box display="flex" flexDirection="row-reverse" p={1} m={1} bgcolor="background.paper">
-      <Button variant="contained" color="primary" >
+      <Button variant="contained" color="primary" onClick={this.copyState} >
   Copy
 </Button>
 </Box>

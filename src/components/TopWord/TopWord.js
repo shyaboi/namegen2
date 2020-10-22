@@ -12,6 +12,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Box from '@material-ui/core/Box';
 import 'fontsource-roboto';
+import copy from 'copy-to-clipboard';
 
 export default class TopWord extends React.Component {
   state = {
@@ -53,11 +54,7 @@ export default class TopWord extends React.Component {
         console.log(this.state.topWord)
   };
   
-  copyCodeToClipboard = () => {
-    // const el = this.state.topWord
-    this.state.topWord.select()
-    document.execCommand("copy")
-  }
+  copyState = ()=> {copy(this.state.topWord);}
 
 
   render (){
@@ -67,7 +64,7 @@ export default class TopWord extends React.Component {
       <Typography variant="h1" component="h2" gutterBottom key={this.state.topWord}>{this.state.topWord}</Typography>
 </Box>
 <Box display="flex" flexDirection="row-reverse" p={1} m={1} bgcolor="background.paper">
-      <Button variant="contained" color="primary" onClick={this.copyCodeToClipboard}>
+      <Button variant="contained" color="primary" onClick={this.copyState}>
   Copy
 </Button>
 </Box>
