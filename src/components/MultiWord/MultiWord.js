@@ -44,7 +44,7 @@ export default class MultiWord extends React.Component {
             this.setState({numChoice:val})
             var amount = parseInt(this.state.numChoice) - 1
           
-          axios.get(`http://localhost:5000/multi/${amount}`).then((res) => {
+          axios.get(`https://namegenserver.herokuapp.com/multi/${amount}`).then((res) => {
               let words = res.data;
             //   console.log(words);
               // const words = res.data;
@@ -68,7 +68,7 @@ export default class MultiWord extends React.Component {
             this.setState({numChoice:val})
             var chosen = val
             console.log(chosen)
-            axios.get(`http://localhost:5000/multi/${chosen}`).then((res) => {
+            axios.get(`https://namegenserver.herokuapp.com/multi/${chosen}`).then((res) => {
               let words = res.data;
             //   console.log(words);
               // const words = res.data;
@@ -116,12 +116,7 @@ export default class MultiWord extends React.Component {
 
 <Box display="flex" justifyContent="center" m={1} p={1} bgcolor="background.paper">
     </Box>
-    <BottomNavigation   className={this.useStyles.root}>
-      {/* <BottomNavigationAction label="Previous" value="previous"  icon={<ArrowBackIosIcon />} /> */}
-      <BottomNavigationAction label="Recents" value="recents" icon={<RestoreIcon />} />
-      <BottomNavigationAction label="Refresh" value="refresh" icon={<LoopRoundedIcon />} />
-      <BottomNavigationAction label="Next" value="next" icon={<ArrowForwardIosIcon />} />
-    </BottomNavigation>
+   
     </Container>
   );}
 }

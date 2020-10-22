@@ -15,6 +15,12 @@ app.use(function (req, res, next) {
   });
 
   app.get("/multi/:number?", (req, res) => {
+ 
+    res.send('This is a headless server of an app ( ͡° ͜ʖ ͡°)');
+  });
+
+
+  app.get("/multi/:number?", (req, res) => {
     console.log(req.params.number)
     let wordCache = []
     for (let i = 0; i < req.params.number; i++) {
