@@ -58,7 +58,29 @@ export default class MultiWord extends React.Component {
 
                 } 
 
-                copyState = ()=> {copy(this.state.words);}
+                copyLowerState = ()=> {
+                  const toLower = this.state.words.toString().replace(/,/g, '')
+                  copy(toLower)
+                }
+                copyCapState = ()=> {
+                  const dinus = this.state.words
+                  var newArr = []
+                  for(var x = 0; x < dinus.length; x++){
+                  newArr.push(dinus[x].charAt(0).toUpperCase()+dinus[x].slice(1));
+                  const toCaps = newArr.toString().replace(/,/g, '')
+                  copy(toCaps);
+                  }
+                }
+                copyCamelState = ()=> {
+                  let [cam, ...dinus] = this.state.words
+                  let newArr = []
+                  for(var x = 0; x < dinus.length; x++){
+                  newArr.push(dinus[x].charAt(0).toUpperCase()+dinus[x].slice(1));
+                  // console.log('cam: '+ cam, newArr)
+                }
+                const toCaps = newArr.toString().replace(/,/g, '')
+                copy(cam+toCaps);
+                }
 
            
         handleChange = (event, value) => {
@@ -90,8 +112,14 @@ export default class MultiWord extends React.Component {
       <Typography display="flex" flexWrap="wrap" variant="h5" component="h5" gutterBottom key={newarray1}>{newarray1}</Typography>
 </Box>
 <Box display="flex" flexDirection="row-reverse" p={1} m={1} bgcolor="background.paper">
-      <Button variant="contained" color="primary" onClick={this.copyState} >
-  Copy
+<Button variant="contained" color="primary" onClick={this.copyCapState} >
+  Copy 1st Letter Capitalilized
+</Button>
+      <Button variant="contained" color="primary" onClick={this.copyLowerState} >
+  Copy All Lowercase
+</Button>
+<Button variant="contained" color="primary" onClick={this.copyCamelState} >
+  Copy camelCase
 </Button>
 </Box>
 <div className={this.useStyles.root}>
