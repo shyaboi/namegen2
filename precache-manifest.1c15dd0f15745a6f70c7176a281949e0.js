@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ee201a16da440106f2e89d876ad639b9",
+    "revision": "a3e1c73160455283c97e9092b31a8f89",
     "url": "/namegen2/index.html"
   },
   {
-    "revision": "78fbe114d55fe18130b6",
+    "revision": "36a3dae504e89430c3a0",
     "url": "/namegen2/static/css/2.80f03b76.chunk.css"
   },
   {
-    "revision": "52cd816964e2216b2928",
+    "revision": "c72b660aca09fc66b0e6",
     "url": "/namegen2/static/css/main.27fd15f6.chunk.css"
   },
   {
-    "revision": "78fbe114d55fe18130b6",
-    "url": "/namegen2/static/js/2.0c127da1.chunk.js"
+    "revision": "36a3dae504e89430c3a0",
+    "url": "/namegen2/static/js/2.0e312383.chunk.js"
   },
   {
     "revision": "f2508b720fa7494d752730597a65b748",
-    "url": "/namegen2/static/js/2.0c127da1.chunk.js.LICENSE.txt"
+    "url": "/namegen2/static/js/2.0e312383.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "52cd816964e2216b2928",
-    "url": "/namegen2/static/js/main.457496ef.chunk.js"
+    "revision": "c72b660aca09fc66b0e6",
+    "url": "/namegen2/static/js/main.9d7c7be8.chunk.js"
   },
   {
     "revision": "1573e41247bbd1112300",
