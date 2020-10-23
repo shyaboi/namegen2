@@ -127,6 +127,8 @@ export default class MultiWord extends React.Component {
       return (
     <Container>
     <Box p={1} m={1} bgcolor="background.paper">
+    <Typography variant="h3" component="h3">Generated Name</Typography>
+
       <Typography display="flex" flexWrap="wrap" variant="h5" component="h5" gutterBottom key={newarray1}>{newarray1}</Typography>
 </Box>
 <Box display="flex" flexDirection="row-reverse" p={1} m={1} bgcolor="background.paper">
