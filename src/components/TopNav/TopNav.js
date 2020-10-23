@@ -45,15 +45,17 @@ const useStyles = makeStyles((theme) => ({
 
 export default function TopNav() {
 
-  const [open, setOpen] = React.useState(false);
+  const [anchorEl, setAnchorEl] = React.useState(null);
 
-  const handleClick = () => {
-    setOpen((prev) => !prev);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
   };
 
-  const handleClickAway = () => {
-    setOpen(false);
+  const handleClose = () => {
+    setAnchorEl(null);
   };
+
+
   const classes = useStyles();
 
   return (
@@ -62,18 +64,24 @@ export default function TopNav() {
       <AppBar position="static">
         <Toolbar aria-controls="simple-menu" aria-haspopup="true">
   
-          <ClickAwayListener onClickAway={handleClickAway}>
-          <div className={classes.root}>
+          <ClickAwayListener >
+          <div>
+      <Button onClick={handleClick}>
+      <MenuIcon />
 
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={handleClick}>
-            <MenuIcon />
-          </IconButton>
-        {open ? (
-          <div className={classes.dropdown}>
-            Click me, I will stay visible until you click outside.
-          </div>
-        ) : null}
-              </div>
+      </Button>
+      <Menu
+        id="simple-menu"
+        anchorEl={anchorEl}
+        keepMounted
+        open={Boolean(anchorEl)}
+        onClose={handleClose}
+      >
+        <MenuItem onClick={handleClose}>FutureThings</MenuItem>
+        <MenuItem onClick={handleClose}>FutureThings</MenuItem>
+        <MenuItem onClick={handleClose}>FutureThings</MenuItem>
+      </Menu>
+    </div>
 
     </ClickAwayListener>
 
@@ -89,7 +97,7 @@ export default function TopNav() {
            <Typography variant="h6" className={classes.title}>
           <Button color="inherit"> <MenuItem component={Link} to="/Docs" >API Documentation</MenuItem></Button>
           </Typography>
-          <Button color="inherit">Anoter Thing</Button>
+          {/* <Button color="inherit">Anoter Thing</Button> */}
 </Toolbar>
       </AppBar>
 

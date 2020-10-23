@@ -43,7 +43,7 @@ export default class MultiWord extends React.Component {
       
       componentDidMount() {
             this.setState({numChoice:val})
-            var amount = parseInt(this.state.numChoice) - 1
+            var amount = parseInt(this.state.numChoice)
           
           axios.get(`https://namegenserver.herokuapp.com/multi/${amount}`).then((res) => {
               let words = res.data;
@@ -82,6 +82,17 @@ export default class MultiWord extends React.Component {
                 copy(cam+toCaps);
                 }
 
+                copyHyphenState = ()=> {
+                  const hyphy = this.state.words.toString().replace(/,/g, '-')
+                  copy(hyphy)
+                }
+
+                copyUnderState = ()=> {
+                  const Under = this.state.words.toString().replace(/,/g, '_')
+                  copy(Under)
+                }
+                
+
            
         handleChange = (event, value) => {
             // console.log(val)
@@ -113,13 +124,19 @@ export default class MultiWord extends React.Component {
 </Box>
 <Box display="flex" flexDirection="row-reverse" p={1} m={1} bgcolor="background.paper">
 <Button variant="contained" color="primary" onClick={this.copyCapState} >
-  Copy 1st Letter Capitalilized
+ Copy PascalCasing
+</Button>
+<Button variant="contained" color="primary"  onClick={this.copyCamelState} >
+  Copy camelCase
 </Button>
       <Button variant="contained" color="primary" onClick={this.copyLowerState} >
-  Copy All Lowercase
+  Copy flatcase
 </Button>
-<Button variant="contained" color="primary" onClick={this.copyCamelState} >
-  Copy camelCase
+<Button variant="contained" color="primary" onClick={this.copyHyphenState} >
+  Copy kebab-case
+</Button>
+<Button variant="contained" color="primary" onClick={this.copyUnderState} >
+  Copy snake_case
 </Button>
 </Box>
 <div className={this.useStyles.root}>
