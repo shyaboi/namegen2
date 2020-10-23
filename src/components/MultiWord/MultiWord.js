@@ -21,6 +21,13 @@ function valuetext(value) {
    val = value
     return val
   }
+  // let thing = []
+
+  // thing.push('how about now')
+  // thing.push('2nd thing')
+  // console.log(localStorage.getItem(1))
+  // localStorage.setItem(1, thing);
+
 
 
 export default class MultiWord extends React.Component {
@@ -116,7 +123,7 @@ export default class MultiWord extends React.Component {
       for(var x = 0; x < dinus.length; x++){
         newarray1.push(dinus[x].charAt(0).toUpperCase()+dinus[x].slice(1));
     }
-    console.log(newarray1)
+    // console.log(newarray1)
       return (
     <Container>
     <Box p={1} m={1} bgcolor="background.paper">
