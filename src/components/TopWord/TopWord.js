@@ -41,8 +41,8 @@ export default class TopWord extends React.Component {
       // console.log(this.state.words);
       this.setState({ topWord:terpWord });
       if (localStorage.getItem('Previous Words') === null){
-        let storageArr = [];
-        storageArr.push(terpWord)
+        let storageArr = [terpWord];
+        // storageArr.push(terpWord)
         this.setState({pastWords:[storageArr]})
         }
         else{
@@ -56,7 +56,7 @@ export default class TopWord extends React.Component {
     });
   }
   
-  handleChange = (event, newValue) => {
+  handleChange = () => {
     let nextWord = this.state.words.pop()
     var thing = this.state.pastWords
     console.log(thing)
@@ -78,16 +78,16 @@ export default class TopWord extends React.Component {
   
   copyState = ()=> {copy(this.state.topWord);}
   clear = ()=> {
-      this.setState({ pastWords:[] })
-      localStorage.setItem("Previous Words", []);
+      this.setState({ pastWords:[this.state.topWord] })
+      localStorage.setItem("Previous Words", [this.state.topWord]);
   }
-  handleClick = () => {
-    console.info('You clicked the Chip.');
-  };
+  // handleClick = () => {
+  //   console.info('You clicked the Chip.');
+  // };
   
   render (){
     const listItems = this.state.pastWords.map((word) =>
-    <Chip avatar={<Avatar>M</Avatar>} label={word} onClick={this.handleClick} />
+    <Chip label={word} />
 );
   return (
     <Container>
@@ -106,12 +106,12 @@ export default class TopWord extends React.Component {
     <BottomNavigation   className={this.useStyles.root}>
       {/* <BottomNavigationAction label="Previous" value="previous"  icon={<ArrowBackIosIcon />} /> */}
       <BottomNavigationAction label="Recents" value="recents" onClick={this.clear} icon={<RestoreIcon />} />
-      <BottomNavigationAction label="Refresh" value="refresh" icon={<LoopRoundedIcon />} />
+      {/* <BottomNavigationAction label="Refresh" value="refresh" icon={<LoopRoundedIcon />} /> */}
       <BottomNavigationAction label="Next" value="next" onClick={this.handleChange} icon={<ArrowForwardIosIcon />} />
     </BottomNavigation>
     <Container>
     <Typography variant="h3" component="h3">Past Words</Typography>
-    <ul>{listItems}</ul>,
+    <ul>{listItems}</ul>
     </Container>
     </Container>
   );}
