@@ -11,10 +11,11 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Fade from '@material-ui/core/Fade';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-router-dom";
 import TopWord from "../TopWord/TopWord"
 import MultiWord from "../MultiWord/MultiWord"
 import Docs from "../Docs/Docs"
+import Home from "../Home/Home"
 
 
 
@@ -77,7 +78,7 @@ export default function TopNav() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}>FutureThings</MenuItem>
+        <MenuItem onClick={handleClose} component={Link} to="/Home">Home</MenuItem>
         <MenuItem onClick={handleClose}>FutureThings</MenuItem>
         <MenuItem onClick={handleClose}>FutureThings</MenuItem>
       </Menu>
@@ -90,7 +91,7 @@ export default function TopNav() {
           </Typography>
 
           <Typography variant="h6" className={classes.title}>
-          <Button color="inherit"><MenuItem component={Link} to="/MultiWord" >Repo Name Generator</MenuItem></Button>
+          <Button color="inherit"><MenuItem component={Link} to="/MultiWord" >Name Generator</MenuItem></Button>
           </Typography>
           
           
@@ -106,7 +107,16 @@ export default function TopNav() {
 
 
       <Switch>
-        
+      <Route exact path="/">
+     <Redirect to="/Home" />
+ </Route>
+ <Route exact path="/namegen2">
+     <Redirect to="/Home" />
+ </Route>
+      <Route path="/Home" component={Home}>
+
+            <Home />
+          </Route>
           <Route path="/TopWord" component={TopWord}>
             <TopWord />
           </Route>
