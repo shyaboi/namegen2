@@ -49,6 +49,7 @@ export default class TopWord extends React.Component {
           let storageArr = localStorage.getItem('Previous Words').split(',')
           console.log(storageArr)
         storageArr.push(terpWord)
+        localStorage.setItem("Previous Words", storageArr);
 
           this.setState({pastWords:storageArr})
           

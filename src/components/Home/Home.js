@@ -8,8 +8,12 @@ export default class Docs extends React.Component {
 render (){
     return (
     <Container>
-          <Typography variant="h1" component="h2" gutterBottom>
-        Home
+          <Typography variant="h1" component="h1" align='center' gutterBottom>
+        ^
+        <br />
+        Welcome To 
+        <br />
+        Name Generator 2
       </Typography>
     </Container>
     )
