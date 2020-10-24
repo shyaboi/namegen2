@@ -8,8 +8,10 @@ import Box from '@material-ui/core/Box';
 import Slider from '@material-ui/core/Slider';
 import copy from 'copy-to-clipboard';
 import Tooltip from '@material-ui/core/Tooltip';
+import Chip from '@material-ui/core/Chip';
 
 import 'fontsource-roboto';
+let oldArr = []
 
 var val;
 function valuetext(value) {
@@ -31,7 +33,8 @@ export default class MultiWord extends React.Component {
     this.state = {
         topWord: "TopWord",
         words: [],
-        numChoice:2
+        numChoice:2,
+        oldWords:[]
     };
     // this.valueSlider = this.valuetext.bind(this)
 }
@@ -44,16 +47,13 @@ export default class MultiWord extends React.Component {
       
       
       componentDidMount() {
+
             this.setState({numChoice:val})
             var amount = parseInt(this.state.numChoice)
           
           axios.get(`https://namegenserver.herokuapp.com/multi/${amount}`).then((res) => {
               let words = res.data;
-            //   console.log(words);
-              // const words = res.data;
               this.setState({ words });
-
-              // console.log(this.state.words);
             });
         }
                 onChange =()=> {
@@ -97,18 +97,16 @@ export default class MultiWord extends React.Component {
 
            
         handleChange = (event, value) => {
-            // console.log(val)
             this.setState({numChoice:val})
             var chosen = val
-            console.log(chosen)
+            // console.log(chosen)
             axios.get(`https://namegenserver.herokuapp.com/multi/${chosen}`).then((res) => {
               let words = res.data;
-            //   console.log(words);
-              // const words = res.data;
               this.setState({ words });
-
-              // console.log(this.state.words);
             });
+            let words = this.state.words
+            oldArr.push(words)
+            this.setState({oldWords:oldArr})
   };
 
 
@@ -120,7 +118,11 @@ export default class MultiWord extends React.Component {
     }
     const toolTipLeaveDelay = 300
     const toolTipEnterDelay = 800
-    
+    const listItems = this.state.oldWords.map((word) =>
+<Tooltip title={word} enterDelay={800} leaveDelay={200} aria-label="PascalCase">
+    <Chip label={word}  value={word} />
+    </Tooltip>
+);
     // console.log(newarray1)
       return (
     <Container>
@@ -147,13 +149,13 @@ export default class MultiWord extends React.Component {
   Copy flatcase
 </Button>
 </Tooltip>
-<Tooltip title="This will copy the Generate Name in kebab-case lowercase" enterDelay={toolTipEnterDelay} leaveDelay={toolTipLeaveDelay} aria-label="kebab-case-lower">
+<Tooltip title="This will copy the Generate Name in kebab-case-lowercase" enterDelay={toolTipEnterDelay} leaveDelay={toolTipLeaveDelay} aria-label="kebab-case-lower">
 
 <Button variant="contained" color="primary" onClick={this.copyHyphenState} >
   Copy kebab-case
 </Button>
 </Tooltip>
-<Tooltip title="This will copy the Generate Name in snake_case lowercase" enterDelay={toolTipEnterDelay} leaveDelay={toolTipLeaveDelay} aria-label="kebab-case-lower">
+<Tooltip title="This will copy the Generate Name in snake_case_lowercase" enterDelay={toolTipEnterDelay} leaveDelay={toolTipLeaveDelay} aria-label="snake_case_lowercase">
 
 <Button variant="contained" color="primary" onClick={this.copyUnderState} >
   Copy snake_case
@@ -180,7 +182,12 @@ export default class MultiWord extends React.Component {
 
 <Box display="flex" justifyContent="center" m={1} p={1} bgcolor="background.paper">
     </Box>
-   
+   <Box>
+    <Typography variant="h3" component="h3">Past Words</Typography>
+
+   <ul>{listItems}</ul>
+
+   </Box>
     </Container>
   );}
 }
