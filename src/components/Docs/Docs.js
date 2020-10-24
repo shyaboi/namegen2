@@ -219,6 +219,22 @@ print(r.json())`} />
   "lowerer"
 ]`}
         />
+        <Typography variant="h3" component="h3" gutterBottom>
+          cURL Usage
+        </Typography>
+        <Typography variant="body1" gutterBottom>
+          To use the API with cURL, open your terminal, and you can use a request
+          similar to the example below;
+        </Typography>
+        <CodeBlock codeString={`curl "https://namegenserver.herokuapp.com/10"`}/>
+        <Typography variant="body1" gutterBottom>
+          The result of the cURL will be an array of words in the specified amount, similar to the example below;
+          <CodeBlock codeString={`% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+Dload  Upload   Total   Spent    Left  Speed
+100   130  100   130    0     0    214      0 --:--:-- --:--:-- --:--:--   214
+["strongyloplasmata","overaccurate","nonlegitimacy","nyroca","photolysis","suers","wiriness","pararhotacism","bides","seafighter"]
+`}/>
+        </Typography>
       </Container>
     );
   }
