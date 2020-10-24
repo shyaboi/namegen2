@@ -4,8 +4,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import RestoreIcon from '@material-ui/icons/Restore';
-import LoopRoundedIcon from '@material-ui/icons/LoopRounded';
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
@@ -13,8 +11,8 @@ import Button from '@material-ui/core/Button';
 import Box from '@material-ui/core/Box';
 import 'fontsource-roboto';
 import copy from 'copy-to-clipboard';
-import Avatar from '@material-ui/core/Avatar';
 import Chip from '@material-ui/core/Chip';
+import Tooltip from '@material-ui/core/Tooltip';
 
 
 export default class TopWord extends React.Component {
@@ -76,7 +74,6 @@ export default class TopWord extends React.Component {
     }
         console.log(this.state.topWord)
   };
-  
   copyState = ()=> {copy(this.state.topWord);}
   clear = ()=> {
       this.setState({ pastWords:[this.state.topWord] })
@@ -88,7 +85,9 @@ export default class TopWord extends React.Component {
   
   render (){
     const listItems = this.state.pastWords.map((word) =>
-    <Chip label={word} />
+<Tooltip title={word} enterDelay={800} leaveDelay={300} aria-label="PascalCase">
+    <Chip label={word}  value={word} />
+    </Tooltip>
 );
   return (
     <Container>
