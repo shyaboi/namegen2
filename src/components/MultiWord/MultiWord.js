@@ -118,9 +118,11 @@ export default class MultiWord extends React.Component {
     }
     const toolTipLeaveDelay = 300
     const toolTipEnterDelay = 800
-    const listItems = this.state.oldWords.map((word) =>
-<Tooltip title={word} enterDelay={800} leaveDelay={200} aria-label="PascalCase">
-    <Chip label={word}  value={word} />
+   
+    const oldMap = this.state.oldWords
+    const listItems = oldMap.map((word) =>
+<Tooltip title={JSON.stringify(word)} enterDelay={800} leaveDelay={200} aria-label="PascalCase">
+    <Chip label={JSON.stringify(word)}  value={JSON.stringify(word)} />
     </Tooltip>
 );
     // console.log(newarray1)
