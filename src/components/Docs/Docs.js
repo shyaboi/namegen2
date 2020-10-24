@@ -41,13 +41,15 @@ export default class Docs extends React.Component {
           Heroku.
         </Typography>
         <CodeBlock
-          codeString={`https://namegenserver.herokuapp.com/1
-https://namegenserver.herokuapp.com/10
-https://namegenserver.herokuapp.com/100
-https://namegenserver.herokuapp.com/1000
-https://namegenserver.herokuapp.com/10000
-https://namegenserver.herokuapp.com/100000
-https://namegenserver.herokuapp.com/multi/ANYNUMBER`}
+          codeString={`https://namegenserver.herokuapp.com/1 //This will return an array of one word
+https://namegenserver.herokuapp.com/10 //This will return an array of ten words
+https://namegenserver.herokuapp.com/100 //This will return an array of one-hundered words
+https://namegenserver.herokuapp.com/1000 //This will return an array of one-thousand words
+https://namegenserver.herokuapp.com/10000 //This will return an array of ten-thousand words
+https://namegenserver.herokuapp.com/100000 //This will return an array of one-hundered-thousand words
+https://namegenserver.herokuapp.com/multi/:number? //This will return an array of the amount of words given in ':number?'
+https://namegenserver.herokuapp.com/alpha/:letter? //This will return an array of all the words starting with the given ':letter?'
+`}
         />
         <Typography variant="body1" gutterBottom>
           This API in its current form simply delivers an arrays of words in
