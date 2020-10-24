@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "67ca4cfdec25b654411bcbdd307119de",
+    "revision": "2540df72deeecfba051d2f4e04dab1fe",
     "url": "/namegen2/index.html"
   },
   {
-    "revision": "eac1557415b75830513f",
+    "revision": "23b54165aff979d5eeaf",
     "url": "/namegen2/static/css/2.80f03b76.chunk.css"
   },
   {
-    "revision": "f2d4224921af866bf3eb",
+    "revision": "abee5c76a7308010f40a",
     "url": "/namegen2/static/css/main.27fd15f6.chunk.css"
   },
   {
-    "revision": "eac1557415b75830513f",
-    "url": "/namegen2/static/js/2.7c66f9e5.chunk.js"
+    "revision": "23b54165aff979d5eeaf",
+    "url": "/namegen2/static/js/2.6381fe61.chunk.js"
   },
   {
     "revision": "f2508b720fa7494d752730597a65b748",
-    "url": "/namegen2/static/js/2.7c66f9e5.chunk.js.LICENSE.txt"
+    "url": "/namegen2/static/js/2.6381fe61.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f2d4224921af866bf3eb",
-    "url": "/namegen2/static/js/main.106de1d0.chunk.js"
+    "revision": "abee5c76a7308010f40a",
+    "url": "/namegen2/static/js/main.9073146c.chunk.js"
   },
   {
     "revision": "1573e41247bbd1112300",
