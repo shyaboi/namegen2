@@ -108,10 +108,10 @@ export default function TopNav() {
 
       <Switch>
       <Route exact path="/">
-     <Redirect to="/Home" />
+     <Redirect to="/Docs" />
  </Route>
  <Route exact path="/namegen2">
-     <Redirect to="/Home" />
+     <Redirect to="/Docs" />
  </Route>
       <Route path="/Home" component={Home}>
 
