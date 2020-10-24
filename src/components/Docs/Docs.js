@@ -49,6 +49,10 @@ https://namegenserver.herokuapp.com/10000
 https://namegenserver.herokuapp.com/100000
 https://namegenserver.herokuapp.com/multi/ANYNUMBER`}
         />
+        <Typography variant="body1" gutterBottom>
+          This API in its current form simply delivers an arrays of words in
+          different varients.
+        </Typography>
         <Typography variant="h3" component="h3" gutterBottom>
         <a href="https://shyaboi.github.io/pstmn/">
           Getwoman</a> Usage
@@ -61,21 +65,17 @@ https://namegenserver.herokuapp.com/multi/ANYNUMBER`}
         </Typography>
         <a href="https://shyaboi.github.io/pstmn/">
           <img src={Get} width="950px" height="500px" />
-          Getwoman{" "}
+          Getwoman
         </a>
         <Typography variant="h3" component="h3" gutterBottom>
           Javascript Fetch Usage
         </Typography>
         <Typography variant="body1" gutterBottom>
-          This API in its current form simply delivers an arrays of words in
-          different varients.
-        </Typography>
-        <Typography variant="body1" gutterBottom>
           The simplest way to make a request in vanilla Javascript would be the
-          fetch method. You can fetch one random word such as the example below:
+          fetch method. You can fetch ten random words such as the example below:
         </Typography>
         <CodeBlock
-          codeString={`'fetch('https://namegenserver.herokuapp.com/10')
+          codeString={`fetch('https://namegenserver.herokuapp.com/10')
     .then(response => response.json())
     .then(data => console.log(data));`}
         />
@@ -96,6 +96,37 @@ https://namegenserver.herokuapp.com/multi/ANYNUMBER`}
   "bombilation",
   "playwright",
   "geologic"
+]`}
+        />
+
+<Typography variant="h3" component="h3" gutterBottom>
+          JQuery Usage
+        </Typography>
+        <Typography variant="body1" gutterBottom>
+          The simplest way to make a request with JQuery would be the
+          get method. You can fetch ten random words such as the example below:
+        </Typography>
+        <CodeBlock codeString={`$.get("https://namegenserver.herokuapp.com/10", 
+  function(data, status){
+    console.log("Data: " + data);
+  });`} />
+  <Typography variant="body1" gutterBottom>
+          This request will come back with one result, which will be ten random
+          words, all in lower case, in an array. The response should look
+          similar to the response below;
+        </Typography>
+        <CodeBlock
+          codeString={`[
+  "peebeens",
+  "stodging",
+  "wendell",
+  "leporids",
+  "massageuse",
+  "sontag",
+  "photoradio",
+  "toiled",
+  "aspread",
+  "intruse"
 ]`}
         />
         <Typography variant="h3" component="h3" gutterBottom>
