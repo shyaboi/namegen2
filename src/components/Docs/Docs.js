@@ -37,7 +37,7 @@ export default class Docs extends React.Component {
         </Typography>
         <Typography variant="body1" gutterBottom>
           If you would like more that one word in the array, change the last
-          number. Currently there are 7 numbered endpoints; at the moment, hosted on
+          number. Currently there are 8 numbered endpoints; at the moment, hosted on
           Heroku.
         </Typography>
         <CodeBlock
