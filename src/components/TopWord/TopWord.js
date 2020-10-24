@@ -85,7 +85,7 @@ export default class TopWord extends React.Component {
   
   render (){
     const listItems = this.state.pastWords.map((word) =>
-<Tooltip title={word} enterDelay={800} leaveDelay={300} aria-label="PascalCase">
+<Tooltip title={word} enterDelay={800} leaveDelay={200} aria-label="PascalCase">
     <Chip label={word}  value={word} />
     </Tooltip>
 );
