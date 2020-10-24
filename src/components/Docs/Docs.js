@@ -104,7 +104,7 @@ https://namegenserver.herokuapp.com/multi/ANYNUMBER`}
         </Typography>
         <Typography variant="body1" gutterBottom>
           The simplest way to make a request with JQuery would be the
-          get method. You can fetch ten random words such as the example below:
+          get method. You can get ten random words such as the example below:
         </Typography>
         <CodeBlock codeString={`$.get("https://namegenserver.herokuapp.com/10", 
   function(data, status){
