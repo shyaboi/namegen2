@@ -26,7 +26,7 @@ export default class Docs extends React.Component {
           Future Development
         </Typography>
         <Typography variant="body1" gutterBottom>
-          I plan on soon adding an alphabetical enpoint to get all words starting with 'b' for example.
+          I plan on toolip style definition lookup for the words.
         </Typography>
         <Typography variant="h3" component="h3" gutterBottom>
           Usage
@@ -37,7 +37,7 @@ export default class Docs extends React.Component {
         </Typography>
         <Typography variant="body1" gutterBottom>
           If you would like more that one word in the array, change the last
-          number. Currently there are 8 numbered endpoints; at the moment, hosted on
+          number. Currently there are 8 Get endpoints; at the moment, hosted on
           Heroku.
         </Typography>
         <CodeBlock
