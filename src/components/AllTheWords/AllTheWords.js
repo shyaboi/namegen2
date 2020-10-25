@@ -147,6 +147,51 @@ export default function VerticalTabs() {
       <TabPanel value={value} index={10}>
       <KWords />
       </TabPanel>
+      <TabPanel value={value} index={11}>
+      <LWords />
+      </TabPanel>
+      <TabPanel value={value} index={12}>
+      <MWords />
+      </TabPanel>
+      <TabPanel value={value} index={13}>
+      <NWords />
+      </TabPanel>
+      <TabPanel value={value} index={14}>
+      <OWords />
+      </TabPanel>
+      <TabPanel value={value} index={15}>
+      <PWords />
+      </TabPanel>
+      <TabPanel value={value} index={16}>
+      <QWords />
+      </TabPanel>
+      <TabPanel value={value} index={17}>
+      <RWords />
+      </TabPanel>
+      <TabPanel value={value} index={18}>
+      <SWords />
+      </TabPanel>
+      <TabPanel value={value} index={19}>
+      <TWords />
+      </TabPanel>
+      <TabPanel value={value} index={20}>
+      <UWords />
+      </TabPanel>
+      <TabPanel value={value} index={21}>
+      <VWords />
+      </TabPanel>
+      <TabPanel value={value} index={22}>
+      <WWords />
+      </TabPanel>
+      <TabPanel value={value} index={23}>
+      <XWords />
+      </TabPanel>
+      <TabPanel value={value} index={24}>
+      <YWords />
+      </TabPanel>
+      <TabPanel value={value} index={25}>
+      <ZWords />
+      </TabPanel>
     </div>
   );
 }
@@ -335,6 +380,7 @@ const listItems = Object.values(words).map((word) => (
         </Box>
     );
   };
+//   words that start with G
   const GWords = () => {
     const [words, setWords] = useState(
       'Loading...'
@@ -365,7 +411,7 @@ const listItems = Object.values(words).map((word) => (
         </Box>
     );
   };
-//   words that start with f
+//   words that start with H
   const HWords = () => {
     const [words, setWords] = useState(
       'Loading...'
@@ -396,6 +442,7 @@ const listItems = Object.values(words).map((word) => (
         </Box>
     );
   };
+//   words that start with I
   const IWords = () => {
     const [words, setWords] = useState(
       'Loading...'
@@ -426,6 +473,7 @@ const listItems = Object.values(words).map((word) => (
         </Box>
     );
   };
+//   words that start with J
   const JWords = () => {
     const [words, setWords] = useState(
       'Loading...'
@@ -456,6 +504,8 @@ const listItems = Object.values(words).map((word) => (
         </Box>
     );
   };
+
+//   words that start with K
   const KWords = () => {
     const [words, setWords] = useState(
       'Loading...'
@@ -487,3 +537,480 @@ const listItems = Object.values(words).map((word) => (
     );
   };
   
+  //   words that start with L
+  const LWords = () => {
+    const [words, setWords] = useState(
+      'Loading...'
+    );
+    useEffect(() => {
+     const doThing = ()=> {
+        async function fetchMoviesJSON() {
+            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/l`);
+            var apes = await response.json();
+            console.log(apes)
+        setWords(apes)
+        }
+        fetchMoviesJSON()
+    }
+    doThing()
+}, []);
+const wordCount = Object.values(words).length
+const listItems = Object.values(words).map((word) => (
+      <li>{word}</li>))
+//   ));
+    return (
+        <Box>
+            <h1>
+                Amount of Words
+            </h1>
+        <h2>{wordCount}</h2>
+        <ul>{listItems}</ul>
+        </Box>
+    );
+  };
+  //   words that start with M
+  const MWords = () => {
+    const [words, setWords] = useState(
+      'Loading...'
+    );
+    useEffect(() => {
+     const doThing = ()=> {
+        async function fetchMoviesJSON() {
+            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/m`);
+            var apes = await response.json();
+            console.log(apes)
+        setWords(apes)
+        }
+        fetchMoviesJSON()
+    }
+    doThing()
+}, []);
+const wordCount = Object.values(words).length
+const listItems = Object.values(words).map((word) => (
+      <li>{word}</li>))
+//   ));
+    return (
+        <Box>
+            <h1>
+                Amount of Words
+            </h1>
+        <h2>{wordCount}</h2>
+        <ul>{listItems}</ul>
+        </Box>
+    );
+  };
+  //   words that start with N
+  const NWords = () => {
+    const [words, setWords] = useState(
+      'Loading...'
+    );
+    useEffect(() => {
+     const doThing = ()=> {
+        async function fetchMoviesJSON() {
+            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/n`);
+            var apes = await response.json();
+            console.log(apes)
+        setWords(apes)
+        }
+        fetchMoviesJSON()
+    }
+    doThing()
+}, []);
+const wordCount = Object.values(words).length
+const listItems = Object.values(words).map((word) => (
+      <li>{word}</li>))
+//   ));
+    return (
+        <Box>
+            <h1>
+                Amount of Words
+            </h1>
+        <h2>{wordCount}</h2>
+        <ul>{listItems}</ul>
+        </Box>
+    );
+  };
+  //   words that start with O
+  const OWords = () => {
+    const [words, setWords] = useState(
+      'Loading...'
+    );
+    useEffect(() => {
+     const doThing = ()=> {
+        async function fetchMoviesJSON() {
+            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/o`);
+            var apes = await response.json();
+            console.log(apes)
+        setWords(apes)
+        }
+        fetchMoviesJSON()
+    }
+    doThing()
+}, []);
+const wordCount = Object.values(words).length
+const listItems = Object.values(words).map((word) => (
+      <li>{word}</li>))
+//   ));
+    return (
+        <Box>
+            <h1>
+                Amount of Words
+            </h1>
+        <h2>{wordCount}</h2>
+        <ul>{listItems}</ul>
+        </Box>
+    );
+  };
+
+  //   words that start with p
+  const PWords = () => {
+    const [words, setWords] = useState(
+      'Loading...'
+    );
+    useEffect(() => {
+     const doThing = ()=> {
+        async function fetchMoviesJSON() {
+            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/p`);
+            var apes = await response.json();
+            console.log(apes)
+        setWords(apes)
+        }
+        fetchMoviesJSON()
+    }
+    doThing()
+}, []);
+const wordCount = Object.values(words).length
+const listItems = Object.values(words).map((word) => (
+      <li>{word}</li>))
+//   ));
+    return (
+        <Box>
+            <h1>
+                Amount of Words
+            </h1>
+        <h2>{wordCount}</h2>
+        <ul>{listItems}</ul>
+        </Box>
+    );
+  };
+
+  //   words that start with Q
+  const QWords = () => {
+    const [words, setWords] = useState(
+      'Loading...'
+    );
+    useEffect(() => {
+     const doThing = ()=> {
+        async function fetchMoviesJSON() {
+            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/q`);
+            var apes = await response.json();
+            console.log(apes)
+        setWords(apes)
+        }
+        fetchMoviesJSON()
+    }
+    doThing()
+}, []);
+const wordCount = Object.values(words).length
+const listItems = Object.values(words).map((word) => (
+      <li>{word}</li>))
+//   ));
+    return (
+        <Box>
+            <h1>
+                Amount of Words
+            </h1>
+        <h2>{wordCount}</h2>
+        <ul>{listItems}</ul>
+        </Box>
+    );
+  };
+
+  //   words that start with R
+  const RWords = () => {
+    const [words, setWords] = useState(
+      'Loading...'
+    );
+    useEffect(() => {
+     const doThing = ()=> {
+        async function fetchMoviesJSON() {
+            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/r`);
+            var apes = await response.json();
+            console.log(apes)
+        setWords(apes)
+        }
+        fetchMoviesJSON()
+    }
+    doThing()
+}, []);
+const wordCount = Object.values(words).length
+const listItems = Object.values(words).map((word) => (
+      <li>{word}</li>))
+//   ));
+    return (
+        <Box>
+            <h1>
+                Amount of Words
+            </h1>
+        <h2>{wordCount}</h2>
+        <ul>{listItems}</ul>
+        </Box>
+    );
+  };
+
+  //   words that start with S
+  const SWords = () => {
+    const [words, setWords] = useState(
+      'Loading...'
+    );
+    useEffect(() => {
+     const doThing = ()=> {
+        async function fetchMoviesJSON() {
+            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/s`);
+            var apes = await response.json();
+            console.log(apes)
+        setWords(apes)
+        }
+        fetchMoviesJSON()
+    }
+    doThing()
+}, []);
+const wordCount = Object.values(words).length
+const listItems = Object.values(words).map((word) => (
+      <li>{word}</li>))
+//   ));
+    return (
+        <Box>
+            <h1>
+                Amount of Words
+            </h1>
+        <h2>{wordCount}</h2>
+        <ul>{listItems}</ul>
+        </Box>
+    );
+  };
+
+  //   words that start with T
+  const TWords = () => {
+    const [words, setWords] = useState(
+      'Loading...'
+    );
+    useEffect(() => {
+     const doThing = ()=> {
+        async function fetchMoviesJSON() {
+            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/t`);
+            var apes = await response.json();
+            console.log(apes)
+        setWords(apes)
+        }
+        fetchMoviesJSON()
+    }
+    doThing()
+}, []);
+const wordCount = Object.values(words).length
+const listItems = Object.values(words).map((word) => (
+      <li>{word}</li>))
+//   ));
+    return (
+        <Box>
+            <h1>
+                Amount of Words
+            </h1>
+        <h2>{wordCount}</h2>
+        <ul>{listItems}</ul>
+        </Box>
+    );
+  };
+
+  //   words that start with U
+  const UWords = () => {
+    const [words, setWords] = useState(
+      'Loading...'
+    );
+    useEffect(() => {
+     const doThing = ()=> {
+        async function fetchMoviesJSON() {
+            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/u`);
+            var apes = await response.json();
+            console.log(apes)
+        setWords(apes)
+        }
+        fetchMoviesJSON()
+    }
+    doThing()
+}, []);
+const wordCount = Object.values(words).length
+const listItems = Object.values(words).map((word) => (
+      <li>{word}</li>))
+//   ));
+    return (
+        <Box>
+            <h1>
+                Amount of Words
+            </h1>
+        <h2>{wordCount}</h2>
+        <ul>{listItems}</ul>
+        </Box>
+    );
+  };
+
+  //   words that start with V
+  const VWords = () => {
+    const [words, setWords] = useState(
+      'Loading...'
+    );
+    useEffect(() => {
+     const doThing = ()=> {
+        async function fetchMoviesJSON() {
+            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/v`);
+            var apes = await response.json();
+            console.log(apes)
+        setWords(apes)
+        }
+        fetchMoviesJSON()
+    }
+    doThing()
+}, []);
+const wordCount = Object.values(words).length
+const listItems = Object.values(words).map((word) => (
+      <li>{word}</li>))
+//   ));
+    return (
+        <Box>
+            <h1>
+                Amount of Words
+            </h1>
+        <h2>{wordCount}</h2>
+        <ul>{listItems}</ul>
+        </Box>
+    );
+  };
+
+  //   words that start with W
+  const WWords = () => {
+    const [words, setWords] = useState(
+      'Loading...'
+    );
+    useEffect(() => {
+     const doThing = ()=> {
+        async function fetchMoviesJSON() {
+            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/w`);
+            var apes = await response.json();
+            console.log(apes)
+        setWords(apes)
+        }
+        fetchMoviesJSON()
+    }
+    doThing()
+}, []);
+const wordCount = Object.values(words).length
+const listItems = Object.values(words).map((word) => (
+      <li>{word}</li>))
+//   ));
+    return (
+        <Box>
+            <h1>
+                Amount of Words
+            </h1>
+        <h2>{wordCount}</h2>
+        <ul>{listItems}</ul>
+        </Box>
+    );
+  };
+
+  //   words that start with X
+  const XWords = () => {
+    const [words, setWords] = useState(
+      'Loading...'
+    );
+    useEffect(() => {
+     const doThing = ()=> {
+        async function fetchMoviesJSON() {
+            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/x`);
+            var apes = await response.json();
+            console.log(apes)
+        setWords(apes)
+        }
+        fetchMoviesJSON()
+    }
+    doThing()
+}, []);
+const wordCount = Object.values(words).length
+const listItems = Object.values(words).map((word) => (
+      <li>{word}</li>))
+//   ));
+    return (
+        <Box>
+            <h1>
+                Amount of Words
+            </h1>
+        <h2>{wordCount}</h2>
+        <ul>{listItems}</ul>
+        </Box>
+    );
+  };
+
+  //   words that start with Y
+  const YWords = () => {
+    const [words, setWords] = useState(
+      'Loading...'
+    );
+    useEffect(() => {
+     const doThing = ()=> {
+        async function fetchMoviesJSON() {
+            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/y`);
+            var apes = await response.json();
+            console.log(apes)
+        setWords(apes)
+        }
+        fetchMoviesJSON()
+    }
+    doThing()
+}, []);
+const wordCount = Object.values(words).length
+const listItems = Object.values(words).map((word) => (
+      <li>{word}</li>))
+//   ));
+    return (
+        <Box>
+            <h1>
+                Amount of Words
+            </h1>
+        <h2>{wordCount}</h2>
+        <ul>{listItems}</ul>
+        </Box>
+    );
+  };
+
+  //   words that start with Z
+  const ZWords = () => {
+    const [words, setWords] = useState(
+      'Loading...'
+    );
+    useEffect(() => {
+     const doThing = ()=> {
+        async function fetchMoviesJSON() {
+            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/z`);
+            var apes = await response.json();
+            console.log(apes)
+        setWords(apes)
+        }
+        fetchMoviesJSON()
+    }
+    doThing()
+}, []);
+const wordCount = Object.values(words).length
+const listItems = Object.values(words).map((word) => (
+      <li>{word}</li>))
+//   ));
+    return (
+        <Box>
+            <h1>
+                Amount of Words
+            </h1>
+        <h2>{wordCount}</h2>
+        <ul>{listItems}</ul>
+        </Box>
+    );
+  };
+
