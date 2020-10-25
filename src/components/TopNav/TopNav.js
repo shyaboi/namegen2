@@ -16,6 +16,7 @@ import TopWord from "../TopWord/TopWord"
 import MultiWord from "../MultiWord/MultiWord"
 import Docs from "../Docs/Docs"
 import Home from "../Home/Home"
+import AllTheWords from "../AllTheWords/AllTheWords"
 
 
 
@@ -93,7 +94,9 @@ export default function TopNav() {
           <Typography variant="h6" className={classes.title}>
           <Button color="inherit"><MenuItem component={Link} to="/MultiWord" >Name Generator</MenuItem></Button>
           </Typography>
-          
+          <Typography variant="h6" className={classes.title}>
+          <Button color="inherit"> <MenuItem component={Link} to="/AllTheWords" >All The Words</MenuItem></Button>
+          </Typography>
           
            <Typography variant="h6" className={classes.title}>
           <Button color="inherit"> <MenuItem component={Link} to="/Docs" >API Documentation</MenuItem></Button>
@@ -113,8 +116,8 @@ export default function TopNav() {
  <Route exact path="/namegen2">
      <Redirect to="/Docs" />
  </Route>
+ 
       <Route path="/Home" component={Home}>
-
             <Home />
           </Route>
           <Route path="/TopWord" component={TopWord}>
@@ -122,6 +125,9 @@ export default function TopNav() {
           </Route>
           <Route exact path="/MultiWord" component={MultiWord}>
             <MultiWord />
+          </Route>
+          <Route exact path="/AllTheWords" component={AllTheWords}>
+            <AllTheWords />
           </Route>
           <Route exact path="/Docs" component={Docs}>
             <Docs />
