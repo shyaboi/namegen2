@@ -5,6 +5,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import Container from "@material-ui/core/Container";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -217,13 +218,18 @@ const listItems = Object.values(words).map((word) => (
       <li>{word}</li>))
 //   ));
     return (
-        <Box>
-            <h1>
-                Amount of Words
-            </h1>
-        <h2>{wordCount}</h2>
+        <Container>
+             <Typography variant="h3" component="h3">
+             Amount of Words Starting With the Letter
+             <Typography variant="h1" component="h1">
+              A
+        </Typography>
+        </Typography>
+        <Typography variant="h3" component="h3">
+        {wordCount}
+        </Typography> 
         <ul>{listItems}</ul>
-        </Box>
+        </Container>
     );
   };
   const BWords = () => {
@@ -247,13 +253,18 @@ const listItems = Object.values(words).map((word) => (
       <li>{word}</li>))
 //   ));
     return (
-        <Box>
-            <h1>
-                Amount of Words
-            </h1>
-        <h2>{wordCount}</h2>
+        <Container>
+             <Typography variant="h3" component="h3">
+             Amount of Words Starting With the Letter
+             <Typography variant="h1" component="h1">
+              B
+        </Typography>
+        </Typography>
+        <Typography variant="h3" component="h3">
+        {wordCount}
+        </Typography> 
         <ul>{listItems}</ul>
-        </Box>
+        </Container>
     );
   };
 //   words that start with C
@@ -278,13 +289,18 @@ const listItems = Object.values(words).map((word) => (
       <li>{word}</li>))
 //   ));
     return (
-        <Box>
-            <h1>
-                Amount of Words
-            </h1>
-        <h2>{wordCount}</h2>
+        <Container>
+             <Typography variant="h3" component="h3">
+             Amount of Words Starting With the Letter
+             <Typography variant="h1" component="h1">
+              C
+        </Typography>
+        </Typography>
+        <Typography variant="h3" component="h3">
+        {wordCount}
+        </Typography> 
         <ul>{listItems}</ul>
-        </Box>
+        </Container>
     );
   };
 //   words that start with D
@@ -309,13 +325,18 @@ const listItems = Object.values(words).map((word) => (
       <li>{word}</li>))
 //   ));
     return (
-        <Box>
-            <h1>
-                Amount of Words
-            </h1>
-        <h2>{wordCount}</h2>
+        <Container>
+             <Typography variant="h3" component="h3">
+             Amount of Words Starting With the Letter
+             <Typography variant="h1" component="h1">
+              D
+        </Typography>
+        </Typography>
+        <Typography variant="h3" component="h3">
+        {wordCount}
+        </Typography> 
         <ul>{listItems}</ul>
-        </Box>
+        </Container>
     );
   };
 //   words that start with 
@@ -340,13 +361,18 @@ const listItems = Object.values(words).map((word) => (
       <li>{word}</li>))
 //   ));
     return (
-        <Box>
-            <h1>
-                Amount of Words
-            </h1>
-        <h2>{wordCount}</h2>
-        <ul>{listItems}</ul>
-        </Box>
+        <Container>
+        <Typography variant="h3" component="h3">
+        Amount of Words Starting With the Letter
+        <Typography variant="h1" component="h1">
+        E
+   </Typography>
+   </Typography>
+   <Typography variant="h3" component="h3">
+   {wordCount}
+   </Typography> 
+   <ul>{listItems}</ul>
+   </Container>
     );
   };
 //   words that start with F
@@ -371,13 +397,18 @@ const listItems = Object.values(words).map((word) => (
       <li>{word}</li>))
 //   ));
     return (
-        <Box>
-            <h1>
-                Amount of Words
-            </h1>
-        <h2>{wordCount}</h2>
-        <ul>{listItems}</ul>
-        </Box>
+        <Container>
+        <Typography variant="h3" component="h3">
+        Amount of Words Starting With the Letter
+        <Typography variant="h1" component="h1">
+         F
+   </Typography>
+   </Typography>
+   <Typography variant="h3" component="h3">
+   {wordCount}
+   </Typography> 
+   <ul>{listItems}</ul>
+   </Container>
     );
   };
 //   words that start with G
@@ -402,13 +433,18 @@ const listItems = Object.values(words).map((word) => (
       <li>{word}</li>))
 //   ));
     return (
-        <Box>
-            <h1>
-                Amount of Words
-            </h1>
-        <h2>{wordCount}</h2>
+        <Container>
+             <Typography variant="h3" component="h3">
+             Amount of Words Starting With the Letter
+             <Typography variant="h1" component="h1">
+             G
+        </Typography>
+        </Typography>
+        <Typography variant="h3" component="h3">
+        {wordCount}
+        </Typography> 
         <ul>{listItems}</ul>
-        </Box>
+        </Container>
     );
   };
 //   words that start with H
@@ -433,13 +469,18 @@ const listItems = Object.values(words).map((word) => (
       <li>{word}</li>))
 //   ));
     return (
-        <Box>
-            <h1>
-                Amount of Words
-            </h1>
-        <h2>{wordCount}</h2>
+        <Container>
+             <Typography variant="h3" component="h3">
+             Amount of Words Starting With the Letter
+             <Typography variant="h1" component="h1">
+              H
+        </Typography>
+        </Typography>
+        <Typography variant="h3" component="h3">
+        {wordCount}
+        </Typography> 
         <ul>{listItems}</ul>
-        </Box>
+        </Container>
     );
   };
 //   words that start with I
@@ -464,13 +505,18 @@ const listItems = Object.values(words).map((word) => (
       <li>{word}</li>))
 //   ));
     return (
-        <Box>
-            <h1>
-                Amount of Words
-            </h1>
-        <h2>{wordCount}</h2>
-        <ul>{listItems}</ul>
-        </Box>
+        <Container>
+        <Typography variant="h3" component="h3">
+        Amount of Words Starting With the Letter
+        <Typography variant="h1" component="h1">
+         I
+   </Typography>
+   </Typography>
+   <Typography variant="h3" component="h3">
+   {wordCount}
+   </Typography> 
+   <ul>{listItems}</ul>
+   </Container>
     );
   };
 //   words that start with J
@@ -495,13 +541,18 @@ const listItems = Object.values(words).map((word) => (
       <li>{word}</li>))
 //   ));
     return (
-        <Box>
-            <h1>
-                Amount of Words
-            </h1>
-        <h2>{wordCount}</h2>
-        <ul>{listItems}</ul>
-        </Box>
+        <Container>
+        <Typography variant="h3" component="h3">
+        Amount of Words Starting With the Letter
+        <Typography variant="h1" component="h1">
+         J
+   </Typography>
+   </Typography>
+   <Typography variant="h3" component="h3">
+   {wordCount}
+   </Typography> 
+   <ul>{listItems}</ul>
+   </Container>
     );
   };
 
@@ -527,13 +578,18 @@ const listItems = Object.values(words).map((word) => (
       <li>{word}</li>))
 //   ));
     return (
-        <Box>
-            <h1>
-                Amount of Words
-            </h1>
-        <h2>{wordCount}</h2>
+        <Container>
+             <Typography variant="h3" component="h3">
+             Amount of Words Starting With the Letter
+             <Typography variant="h1" component="h1">
+             K
+        </Typography>
+        </Typography>
+        <Typography variant="h3" component="h3">
+        {wordCount}
+        </Typography> 
         <ul>{listItems}</ul>
-        </Box>
+        </Container>
     );
   };
   
@@ -559,13 +615,18 @@ const listItems = Object.values(words).map((word) => (
       <li>{word}</li>))
 //   ));
     return (
-        <Box>
-            <h1>
-                Amount of Words
-            </h1>
-        <h2>{wordCount}</h2>
-        <ul>{listItems}</ul>
-        </Box>
+        <Container>
+        <Typography variant="h3" component="h3">
+        Amount of Words Starting With the Letter
+        <Typography variant="h1" component="h1">
+        L
+   </Typography>
+   </Typography>
+   <Typography variant="h3" component="h3">
+   {wordCount}
+   </Typography> 
+   <ul>{listItems}</ul>
+   </Container>
     );
   };
   //   words that start with M
@@ -590,13 +651,18 @@ const listItems = Object.values(words).map((word) => (
       <li>{word}</li>))
 //   ));
     return (
-        <Box>
-            <h1>
-                Amount of Words
-            </h1>
-        <h2>{wordCount}</h2>
+        <Container>
+             <Typography variant="h3" component="h3">
+             Amount of Words Starting With the Letter
+             <Typography variant="h1" component="h1">
+             M
+        </Typography>
+        </Typography>
+        <Typography variant="h3" component="h3">
+        {wordCount}
+        </Typography> 
         <ul>{listItems}</ul>
-        </Box>
+        </Container>
     );
   };
   //   words that start with N
@@ -621,13 +687,18 @@ const listItems = Object.values(words).map((word) => (
       <li>{word}</li>))
 //   ));
     return (
-        <Box>
-            <h1>
-                Amount of Words
-            </h1>
-        <h2>{wordCount}</h2>
+        <Container>
+             <Typography variant="h3" component="h3">
+             Amount of Words Starting With the Letter
+             <Typography variant="h1" component="h1">
+              N
+        </Typography>
+        </Typography>
+        <Typography variant="h3" component="h3">
+        {wordCount}
+        </Typography> 
         <ul>{listItems}</ul>
-        </Box>
+        </Container>
     );
   };
   //   words that start with O
@@ -652,13 +723,18 @@ const listItems = Object.values(words).map((word) => (
       <li>{word}</li>))
 //   ));
     return (
-        <Box>
-            <h1>
-                Amount of Words
-            </h1>
-        <h2>{wordCount}</h2>
+        <Container>
+             <Typography variant="h3" component="h3">
+             Amount of Words Starting With the Letter
+             <Typography variant="h1" component="h1">
+             O
+        </Typography>
+        </Typography>
+        <Typography variant="h3" component="h3">
+        {wordCount}
+        </Typography> 
         <ul>{listItems}</ul>
-        </Box>
+        </Container>
     );
   };
 
@@ -684,13 +760,18 @@ const listItems = Object.values(words).map((word) => (
       <li>{word}</li>))
 //   ));
     return (
-        <Box>
-            <h1>
-                Amount of Words
-            </h1>
-        <h2>{wordCount}</h2>
+        <Container>
+             <Typography variant="h3" component="h3">
+             Amount of Words Starting With the Letter
+             <Typography variant="h1" component="h1">
+             P
+        </Typography>
+        </Typography>
+        <Typography variant="h3" component="h3">
+        {wordCount}
+        </Typography> 
         <ul>{listItems}</ul>
-        </Box>
+        </Container>
     );
   };
 
@@ -716,13 +797,18 @@ const listItems = Object.values(words).map((word) => (
       <li>{word}</li>))
 //   ));
     return (
-        <Box>
-            <h1>
-                Amount of Words
-            </h1>
-        <h2>{wordCount}</h2>
-        <ul>{listItems}</ul>
-        </Box>
+        <Container>
+        <Typography variant="h3" component="h3">
+        Amount of Words Starting With the Letter
+        <Typography variant="h1" component="h1">
+         Q
+   </Typography>
+   </Typography>
+   <Typography variant="h3" component="h3">
+   {wordCount}
+   </Typography> 
+   <ul>{listItems}</ul>
+   </Container>
     );
   };
 
@@ -748,13 +834,18 @@ const listItems = Object.values(words).map((word) => (
       <li>{word}</li>))
 //   ));
     return (
-        <Box>
-            <h1>
-                Amount of Words
-            </h1>
-        <h2>{wordCount}</h2>
-        <ul>{listItems}</ul>
-        </Box>
+        <Container>
+        <Typography variant="h3" component="h3">
+        Amount of Words Starting With the Letter
+        <Typography variant="h1" component="h1">
+         R
+   </Typography>
+   </Typography>
+   <Typography variant="h3" component="h3">
+   {wordCount}
+   </Typography> 
+   <ul>{listItems}</ul>
+   </Container>
     );
   };
 
@@ -780,13 +871,18 @@ const listItems = Object.values(words).map((word) => (
       <li>{word}</li>))
 //   ));
     return (
-        <Box>
-            <h1>
-                Amount of Words
-            </h1>
-        <h2>{wordCount}</h2>
+        <Container>
+             <Typography variant="h3" component="h3">
+             Amount of Words Starting With the Letter
+             <Typography variant="h1" component="h1">
+             S
+        </Typography>
+        </Typography>
+        <Typography variant="h3" component="h3">
+        {wordCount}
+        </Typography> 
         <ul>{listItems}</ul>
-        </Box>
+        </Container>
     );
   };
 
@@ -812,13 +908,18 @@ const listItems = Object.values(words).map((word) => (
       <li>{word}</li>))
 //   ));
     return (
-        <Box>
-            <h1>
-                Amount of Words
-            </h1>
-        <h2>{wordCount}</h2>
+        <Container>
+             <Typography variant="h3" component="h3">
+             Amount of Words Starting With the Letter
+             <Typography variant="h1" component="h1">
+              T
+        </Typography>
+        </Typography>
+        <Typography variant="h3" component="h3">
+        {wordCount}
+        </Typography> 
         <ul>{listItems}</ul>
-        </Box>
+        </Container>
     );
   };
 
@@ -844,13 +945,18 @@ const listItems = Object.values(words).map((word) => (
       <li>{word}</li>))
 //   ));
     return (
-        <Box>
-            <h1>
-                Amount of Words
-            </h1>
-        <h2>{wordCount}</h2>
-        <ul>{listItems}</ul>
-        </Box>
+        <Container>
+        <Typography variant="h3" component="h3">
+        Amount of Words Starting With the Letter
+        <Typography variant="h1" component="h1">
+        U
+   </Typography>
+   </Typography>
+   <Typography variant="h3" component="h3">
+   {wordCount}
+   </Typography> 
+   <ul>{listItems}</ul>
+   </Container>
     );
   };
 
@@ -876,13 +982,18 @@ const listItems = Object.values(words).map((word) => (
       <li>{word}</li>))
 //   ));
     return (
-        <Box>
-            <h1>
-                Amount of Words
-            </h1>
-        <h2>{wordCount}</h2>
-        <ul>{listItems}</ul>
-        </Box>
+        <Container>
+        <Typography variant="h3" component="h3">
+        Amount of Words Starting With the Letter
+        <Typography variant="h1" component="h1">
+         V
+   </Typography>
+   </Typography>
+   <Typography variant="h3" component="h3">
+   {wordCount}
+   </Typography> 
+   <ul>{listItems}</ul>
+   </Container>
     );
   };
 
@@ -908,13 +1019,18 @@ const listItems = Object.values(words).map((word) => (
       <li>{word}</li>))
 //   ));
     return (
-        <Box>
-            <h1>
-                Amount of Words
-            </h1>
-        <h2>{wordCount}</h2>
-        <ul>{listItems}</ul>
-        </Box>
+        <Container>
+        <Typography variant="h3" component="h3">
+        Amount of Words Starting With the Letter
+        <Typography variant="h1" component="h1">
+        W
+   </Typography>
+   </Typography>
+   <Typography variant="h3" component="h3">
+   {wordCount}
+   </Typography> 
+   <ul>{listItems}</ul>
+   </Container>
     );
   };
 
@@ -940,13 +1056,18 @@ const listItems = Object.values(words).map((word) => (
       <li>{word}</li>))
 //   ));
     return (
-        <Box>
-            <h1>
-                Amount of Words
-            </h1>
-        <h2>{wordCount}</h2>
-        <ul>{listItems}</ul>
-        </Box>
+        <Container>
+        <Typography variant="h3" component="h3">
+        Amount of Words Starting With the Letter
+        <Typography variant="h1" component="h1">
+         X
+   </Typography>
+   </Typography>
+   <Typography variant="h3" component="h3">
+   {wordCount}
+   </Typography> 
+   <ul>{listItems}</ul>
+   </Container>
     );
   };
 
@@ -972,13 +1093,18 @@ const listItems = Object.values(words).map((word) => (
       <li>{word}</li>))
 //   ));
     return (
-        <Box>
-            <h1>
-                Amount of Words
-            </h1>
-        <h2>{wordCount}</h2>
-        <ul>{listItems}</ul>
-        </Box>
+        <Container>
+        <Typography variant="h3" component="h3">
+        Amount of Words Starting With the Letter
+        <Typography variant="h1" component="h1">
+         Y
+   </Typography>
+   </Typography>
+   <Typography variant="h3" component="h3">
+   {wordCount}
+   </Typography> 
+   <ul>{listItems}</ul>
+   </Container>
     );
   };
 
@@ -1004,13 +1130,18 @@ const listItems = Object.values(words).map((word) => (
       <li>{word}</li>))
 //   ));
     return (
-        <Box>
-            <h1>
-                Amount of Words
-            </h1>
-        <h2>{wordCount}</h2>
-        <ul>{listItems}</ul>
-        </Box>
+        <Container>
+        <Typography variant="h3" component="h3">
+        Amount of Words Starting With the Letter
+        <Typography variant="h1" component="h1">
+         Z
+   </Typography>
+   </Typography>
+   <Typography variant="h3" component="h3">
+   {wordCount}
+   </Typography> 
+   <ul>{listItems}</ul>
+   </Container>
     );
   };
 
