@@ -203,13 +203,13 @@ const AWords = () => {
     );
     useEffect(() => {
      const doThing = ()=> {
-        async function fetchMoviesJSON() {
+        async function fetchEm() {
             const response = await fetch(`https://namegenserver.herokuapp.com/alpha/a`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)
         }
-        fetchMoviesJSON()
+        fetchEm()
     }
     doThing()
 }, []);

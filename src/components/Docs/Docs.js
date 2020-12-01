@@ -48,8 +48,7 @@ https://namegenserver.herokuapp.com/1000 //This will return an array of one-thou
 https://namegenserver.herokuapp.com/10000 //This will return an array of ten-thousand words
 https://namegenserver.herokuapp.com/100000 //This will return an array of one-hundered-thousand words
 https://namegenserver.herokuapp.com/multi/:number? //This will return an array of the amount of words given in ':number?'
-https://namegenserver.herokuapp.com/alpha/:letter? //This will return an array of all the words starting with the given ':letter?'
-`}
+https://namegenserver.herokuapp.com/alpha/:letter? //This will return an array of all the words starting with the given ':letter?'`}
         />
         <Typography variant="body1" gutterBottom>
           This API in its current form simply delivers an arrays of words in
