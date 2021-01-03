@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "09838194ddb90e7c9fbf11288bef3417",
+    "revision": "89dba5caa7ebb6890a58746548f34cee",
     "url": "/namegen2/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/namegen2/static/css/2.80f03b76.chunk.css"
   },
   {
-    "revision": "71364721125957b57a9d",
+    "revision": "45e0f33d469f4971c4b6",
     "url": "/namegen2/static/css/main.27fd15f6.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/namegen2/static/js/2.ff643be5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "71364721125957b57a9d",
-    "url": "/namegen2/static/js/main.b763a915.chunk.js"
+    "revision": "45e0f33d469f4971c4b6",
+    "url": "/namegen2/static/js/main.db910e71.chunk.js"
   },
   {
     "revision": "1573e41247bbd1112300",

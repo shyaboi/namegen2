@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/namegen2/static/css/main.27fd15f6.chunk.css",
-    "main.js": "/namegen2/static/js/main.b763a915.chunk.js",
-    "main.js.map": "/namegen2/static/js/main.b763a915.chunk.js.map",
+    "main.js": "/namegen2/static/js/main.db910e71.chunk.js",
+    "main.js.map": "/namegen2/static/js/main.db910e71.chunk.js.map",
     "runtime-main.js": "/namegen2/static/js/runtime-main.575d5d1f.js",
     "runtime-main.js.map": "/namegen2/static/js/runtime-main.575d5d1f.js.map",
     "static/css/2.80f03b76.chunk.css": "/namegen2/static/css/2.80f03b76.chunk.css",
     "static/js/2.ff643be5.chunk.js": "/namegen2/static/js/2.ff643be5.chunk.js",
     "static/js/2.ff643be5.chunk.js.map": "/namegen2/static/js/2.ff643be5.chunk.js.map",
     "index.html": "/namegen2/index.html",
-    "precache-manifest.3567984e8de6b9aa1bb61aa7ec8aa716.js": "/namegen2/precache-manifest.3567984e8de6b9aa1bb61aa7ec8aa716.js",
+    "precache-manifest.22f706558c260a11c3a01b3202031a7d.js": "/namegen2/precache-manifest.22f706558c260a11c3a01b3202031a7d.js",
     "service-worker.js": "/namegen2/service-worker.js",
     "static/css/2.80f03b76.chunk.css.map": "/namegen2/static/css/2.80f03b76.chunk.css.map",
     "static/css/main.27fd15f6.chunk.css.map": "/namegen2/static/css/main.27fd15f6.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.80f03b76.chunk.css",
     "static/js/2.ff643be5.chunk.js",
     "static/css/main.27fd15f6.chunk.css",
-    "static/js/main.b763a915.chunk.js"
+    "static/js/main.db910e71.chunk.js"
   ]
 }
