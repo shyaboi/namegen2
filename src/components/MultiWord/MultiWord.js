@@ -51,7 +51,7 @@ export default class MultiWord extends React.Component {
             this.setState({numChoice:val})
             var amount = parseInt(this.state.numChoice)
           
-          axios.get(`https://namegenserver.herokuapp.com/multi/${amount}`).then((res) => {
+          axios.get(`https://uselessapi.com/api/name-gen/multi/${amount}`).then((res) => {
               let words = res.data;
               this.setState({ words });
             });
@@ -100,7 +100,7 @@ export default class MultiWord extends React.Component {
             this.setState({numChoice:val})
             var chosen = val
             // console.log(chosen)
-            axios.get(`https://namegenserver.herokuapp.com/multi/${chosen}`).then((res) => {
+            axios.get(`https://uselessapi.com/api/name-gen/multi/${chosen}`).then((res) => {
               let words = res.data;
               this.setState({ words });
             });

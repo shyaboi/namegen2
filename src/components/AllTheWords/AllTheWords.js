@@ -204,7 +204,7 @@ const AWords = () => {
     useEffect(() => {
      const doThing = ()=> {
         async function fetchEm() {
-            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/a`);
+            const response = await fetch(`https://uselessapi.com/api/name-gen/alpha/a`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)
@@ -239,7 +239,7 @@ const listItems = Object.values(words).map((word) => (
     useEffect(() => {
      const doThing = ()=> {
         async function fetchMoviesJSON() {
-            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/b`);
+            const response = await fetch(`https://uselessapi.com/api/name-gen/alpha/b`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)
@@ -275,7 +275,7 @@ const listItems = Object.values(words).map((word) => (
     useEffect(() => {
      const doThing = ()=> {
         async function fetchMoviesJSON() {
-            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/c`);
+            const response = await fetch(`https://uselessapi.com/api/name-gen/alpha/c`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)
@@ -311,7 +311,7 @@ const listItems = Object.values(words).map((word) => (
     useEffect(() => {
      const doThing = ()=> {
         async function fetchMoviesJSON() {
-            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/d`);
+            const response = await fetch(`https://uselessapi.com/api/name-gen/alpha/d`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)
@@ -347,7 +347,7 @@ const listItems = Object.values(words).map((word) => (
     useEffect(() => {
      const doThing = ()=> {
         async function fetchMoviesJSON() {
-            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/e`);
+            const response = await fetch(`https://uselessapi.com/api/name-gen/alpha/e`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)
@@ -383,7 +383,7 @@ const listItems = Object.values(words).map((word) => (
     useEffect(() => {
      const doThing = ()=> {
         async function fetchMoviesJSON() {
-            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/f`);
+            const response = await fetch(`https://uselessapi.com/api/name-gen/alpha/f`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)
@@ -419,7 +419,7 @@ const listItems = Object.values(words).map((word) => (
     useEffect(() => {
      const doThing = ()=> {
         async function fetchMoviesJSON() {
-            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/g`);
+            const response = await fetch(`https://uselessapi.com/api/name-gen/alpha/g`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)
@@ -455,7 +455,7 @@ const listItems = Object.values(words).map((word) => (
     useEffect(() => {
      const doThing = ()=> {
         async function fetchMoviesJSON() {
-            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/h`);
+            const response = await fetch(`https://uselessapi.com/api/name-gen/alpha/h`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)
@@ -491,7 +491,7 @@ const listItems = Object.values(words).map((word) => (
     useEffect(() => {
      const doThing = ()=> {
         async function fetchMoviesJSON() {
-            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/i`);
+            const response = await fetch(`https://uselessapi.com/api/name-gen/alpha/i`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)
@@ -527,7 +527,7 @@ const listItems = Object.values(words).map((word) => (
     useEffect(() => {
      const doThing = ()=> {
         async function fetchMoviesJSON() {
-            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/j`);
+            const response = await fetch(`https://uselessapi.com/api/name-gen/alpha/j`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)
@@ -564,7 +564,7 @@ const listItems = Object.values(words).map((word) => (
     useEffect(() => {
      const doThing = ()=> {
         async function fetchMoviesJSON() {
-            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/k`);
+            const response = await fetch(`https://uselessapi.com/api/name-gen/alpha/k`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)
@@ -601,7 +601,7 @@ const listItems = Object.values(words).map((word) => (
     useEffect(() => {
      const doThing = ()=> {
         async function fetchMoviesJSON() {
-            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/l`);
+            const response = await fetch(`https://uselessapi.com/api/name-gen/alpha/l`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)
@@ -637,7 +637,7 @@ const listItems = Object.values(words).map((word) => (
     useEffect(() => {
      const doThing = ()=> {
         async function fetchMoviesJSON() {
-            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/m`);
+            const response = await fetch(`https://uselessapi.com/api/name-gen/alpha/m`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)
@@ -673,7 +673,7 @@ const listItems = Object.values(words).map((word) => (
     useEffect(() => {
      const doThing = ()=> {
         async function fetchMoviesJSON() {
-            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/n`);
+            const response = await fetch(`https://uselessapi.com/api/name-gen/alpha/n`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)
@@ -709,7 +709,7 @@ const listItems = Object.values(words).map((word) => (
     useEffect(() => {
      const doThing = ()=> {
         async function fetchMoviesJSON() {
-            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/o`);
+            const response = await fetch(`https://uselessapi.com/api/name-gen/alpha/o`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)
@@ -746,7 +746,7 @@ const listItems = Object.values(words).map((word) => (
     useEffect(() => {
      const doThing = ()=> {
         async function fetchMoviesJSON() {
-            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/p`);
+            const response = await fetch(`https://uselessapi.com/api/name-gen/alpha/p`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)
@@ -783,7 +783,7 @@ const listItems = Object.values(words).map((word) => (
     useEffect(() => {
      const doThing = ()=> {
         async function fetchMoviesJSON() {
-            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/q`);
+            const response = await fetch(`https://uselessapi.com/api/name-gen/alpha/q`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)
@@ -820,7 +820,7 @@ const listItems = Object.values(words).map((word) => (
     useEffect(() => {
      const doThing = ()=> {
         async function fetchMoviesJSON() {
-            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/r`);
+            const response = await fetch(`https://uselessapi.com/api/name-gen/alpha/r`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)
@@ -857,7 +857,7 @@ const listItems = Object.values(words).map((word) => (
     useEffect(() => {
      const doThing = ()=> {
         async function fetchMoviesJSON() {
-            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/s`);
+            const response = await fetch(`https://uselessapi.com/api/name-gen/alpha/s`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)
@@ -894,7 +894,7 @@ const listItems = Object.values(words).map((word) => (
     useEffect(() => {
      const doThing = ()=> {
         async function fetchMoviesJSON() {
-            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/t`);
+            const response = await fetch(`https://uselessapi.com/api/name-gen/alpha/t`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)
@@ -931,7 +931,7 @@ const listItems = Object.values(words).map((word) => (
     useEffect(() => {
      const doThing = ()=> {
         async function fetchMoviesJSON() {
-            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/u`);
+            const response = await fetch(`https://uselessapi.com/api/name-gen/alpha/u`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)
@@ -968,7 +968,7 @@ const listItems = Object.values(words).map((word) => (
     useEffect(() => {
      const doThing = ()=> {
         async function fetchMoviesJSON() {
-            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/v`);
+            const response = await fetch(`https://uselessapi.com/api/name-gen/alpha/v`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)
@@ -1005,7 +1005,7 @@ const listItems = Object.values(words).map((word) => (
     useEffect(() => {
      const doThing = ()=> {
         async function fetchMoviesJSON() {
-            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/w`);
+            const response = await fetch(`https://uselessapi.com/api/name-gen/alpha/w`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)
@@ -1042,7 +1042,7 @@ const listItems = Object.values(words).map((word) => (
     useEffect(() => {
      const doThing = ()=> {
         async function fetchMoviesJSON() {
-            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/x`);
+            const response = await fetch(`https://uselessapi.com/api/name-gen/alpha/x`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)
@@ -1079,7 +1079,7 @@ const listItems = Object.values(words).map((word) => (
     useEffect(() => {
      const doThing = ()=> {
         async function fetchMoviesJSON() {
-            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/y`);
+            const response = await fetch(`https://uselessapi.com/api/name-gen/alpha/y`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)
@@ -1116,7 +1116,7 @@ const listItems = Object.values(words).map((word) => (
     useEffect(() => {
      const doThing = ()=> {
         async function fetchMoviesJSON() {
-            const response = await fetch(`https://namegenserver.herokuapp.com/alpha/z`);
+            const response = await fetch(`https://uselessapi.com/api/name-gen/alpha/z`);
             var apes = await response.json();
             console.log(apes)
         setWords(apes)

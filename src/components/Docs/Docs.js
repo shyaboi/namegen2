@@ -41,14 +41,14 @@ export default class Docs extends React.Component {
           Heroku.
         </Typography>
         <CodeBlock
-          codeString={`https://namegenserver.herokuapp.com/1 //This will return an array of one word
-https://namegenserver.herokuapp.com/10 //This will return an array of ten words
-https://namegenserver.herokuapp.com/100 //This will return an array of one-hundered words
-https://namegenserver.herokuapp.com/1000 //This will return an array of one-thousand words
-https://namegenserver.herokuapp.com/10000 //This will return an array of ten-thousand words
-https://namegenserver.herokuapp.com/100000 //This will return an array of one-hundered-thousand words
-https://namegenserver.herokuapp.com/multi/:number? //This will return an array of the amount of words given in ':number?'
-https://namegenserver.herokuapp.com/alpha/:letter? //This will return an array of all the words starting with the given ':letter?'`}
+          codeString={`https://uselessapi.com/api/name-gen/1 //This will return an array of one word
+https://uselessapi.com/api/name-gen/10 //This will return an array of ten words
+https://uselessapi.com/api/name-gen/100 //This will return an array of one-hundered words
+https://uselessapi.com/api/name-gen/1000 //This will return an array of one-thousand words
+https://uselessapi.com/api/name-gen/10000 //This will return an array of ten-thousand words
+https://uselessapi.com/api/name-gen/100000 //This will return an array of one-hundered-thousand words
+https://uselessapi.com/api/name-gen/multi/:number? //This will return an array of the amount of words given in ':number?'
+https://uselessapi.com/api/name-gen/alpha/:letter? //This will return an array of all the words starting with the given ':letter?'`}
         />
         <Typography variant="body1" gutterBottom>
           This API in its current form simply delivers an arrays of words in
@@ -76,7 +76,7 @@ https://namegenserver.herokuapp.com/alpha/:letter? //This will return an array o
           fetch method. You can fetch ten random words such as the example below:
         </Typography>
         <CodeBlock
-          codeString={`fetch('https://namegenserver.herokuapp.com/10')
+          codeString={`fetch('https://uselessapi.com/api/name-gen/10')
     .then(response => response.json())
     .then(data => console.log(data));`}
         />
@@ -107,7 +107,7 @@ https://namegenserver.herokuapp.com/alpha/:letter? //This will return an array o
           The simplest way to make a request with JQuery would be the
           get method. You can get ten random words such as the example below:
         </Typography>
-        <CodeBlock codeString={`$.get("https://namegenserver.herokuapp.com/10", 
+        <CodeBlock codeString={`$.get("https://uselessapi.com/api/name-gen/10", 
   function(data, status){
     console.log("Data: " + data);
   });`} />
@@ -142,7 +142,7 @@ https://namegenserver.herokuapp.com/alpha/:letter? //This will return an array o
             codeString={`var https = require('https');
 
 var options = {
-  host: 'namegenserver.herokuapp.com',
+  host: 'uselessapi.com/api/name-gen',
   path: '/10/',
   headers: {
     Accept': 'application/json'
@@ -198,7 +198,7 @@ var options = {
           similar to the example below;
         </Typography>
         <CodeBlock codeString={`import requests
-r = requests.get('https://namegenserver.herokuapp.com/10')
+r = requests.get('https://uselessapi.com/api/name-gen/10')
 print(r.json())`} />
 
 <Typography variant="body1" gutterBottom>
@@ -227,7 +227,7 @@ print(r.json())`} />
           To use the API with cURL, open your terminal, and you can use a request
           similar to the example below;
         </Typography>
-        <CodeBlock codeString={`curl "https://namegenserver.herokuapp.com/10"`}/>
+        <CodeBlock codeString={`curl "https://uselessapi.com/api/name-gen/10"`}/>
         <Typography variant="body1" gutterBottom>
           The result of the cURL will be an array of words in the specified amount, similar to the example below;
           <CodeBlock codeString={`% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current

@@ -28,7 +28,7 @@ export default class TopWord extends React.Component {
   });
 
   componentDidMount() {
-    axios.get(`https://namegenserver.herokuapp.com/10`).then((res) => {
+    axios.get(`https://uselessapi.com/api/name-gen/10`).then((res) => {
       let [terpWord, ...words] = res.data;
       // console.log(terpWord);
       // const words = res.data;
@@ -60,7 +60,7 @@ export default class TopWord extends React.Component {
     this.setState({ topWord: nextWord });
 
     if (this.state.words.length < 4) {
-      axios.get(`https://namegenserver.herokuapp.com/10`).then((res) => {
+      axios.get(`https://uselessapi.com/api/name-gen/10`).then((res) => {
         let cacheGrab = res.data;
         console.log(cacheGrab);
         this.state.words.unshift(...cacheGrab);
